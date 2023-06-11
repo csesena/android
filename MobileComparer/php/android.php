@@ -2,8 +2,8 @@
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 
-$dbU='fer87';
-$db = mysql_connect("fer87.db.8639285.hostedresource.com","fer87","b49a00efbd40") OR DIE ('Tareas de mantenimiento. Pruebe más tarde, por favor.');
+$dbU='noway';
+$db = mysql_connect("noway.db.8639285.hostedresource.com","noway","noway") OR DIE ('Tareas de mantenimiento. Pruebe más tarde, por favor.');
 mysql_select_db($dbU);
 
 if (isset($_REQUEST["funcion"])) $funcion=$_REQUEST["funcion"];

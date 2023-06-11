@@ -1,7 +1,7 @@
 <?php
 
 /* Se requiere usuario y contraseña para comprobar la procedencia de la peticion */
-if (isset($_GET['user']) && $_GET['user']=="lolation") {
+if (isset($_GET['user']) && $_GET['user']=="re") {
 
 	/* Conversion Dollar/Euro y Peso/Euro */
 	$conversion_dollar = 0.750;

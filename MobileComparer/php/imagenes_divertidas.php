@@ -1,7 +1,7 @@
 <?php
 
 /* Se requiere usuario y contraseña para comprobar la procedencia de la peticion */
-if ((isset($_GET['user'])) && ($_GET['user']=="lolation") && (isset($_GET['pass'])) && ($_GET['pass']=="lolation")) {
+if ((isset($_GET['user'])) && ($_GET['user']=="re") && (isset($_GET['pass'])) && ($_GET['pass']=="re")) {
 
 	/* determinamos que funcion debemos ejecutar */
 	$tipo_funcion = isset($_GET['tipo_funcion']) ? $_GET['tipo_funcion'] : "nada";
@@ -113,7 +113,7 @@ function listado_por_categoria($cat) {
 
 function conectarBD() {
     /* Conectamos a la base de datos */	
-	$link = new mysqli("37.148.204.46","alex26908","Alejandro@88",'alex26908') OR DIE ('Tareas de mantenimiento. Pruebe más tarde, por favor.');
+	$link = new mysqli("noway","noway","noway",'noway') OR DIE ('Tareas de mantenimiento. Pruebe más tarde, por favor.');
 	if ($mysqli->connect_errno) {
 		printf("Connect failed: %s\n", $mysqli->connect_error);
 		exit();
