@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Episode Calendar</string>
+
+    <string name="title_competicion_detail">Competition</string>
+    <string name="title_links">Links</string>
+    <string name="title_informacion">About&#8230;</string>
+    <string name="all">All</string>
+    <string name="no_series">There was a problem retrieving the TV shows. Try again later.</string>
+    <string name="no_fav_series">There are no TV shows in your favorites list. Try to add some TV shows to it :-)</string>
+    <string name="no_episodes">There are no episodes or there was a problem retrieving them. Try again later.</string>
+    <string name="no_search">There are no coincidences for the specified search criteria.</string>
+    <string name="no_connection">There is no connection to the Internet. Please, check your network settings.</string>
+    <string name="vote">Vote</string>
+    <string name="thanks">Thank you for voting!</string>
+    <string name="logoSerie">TV Show Logo</string>
+    <string name="favIcon">Fav Icon</string>
+    <string name="expandIcon">Expand Icon</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="download">Download</string>
+    <string name="downloading_data">Downloading data&#8230;</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_about">About&#8230;</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="today_episodes">Today\'s Episodes</string>
+    <string name="favorite_shows">Favorite TV Shows</string>
+    <string name="all_shows">All TV Shows</string>
+    <string name="calendar">TV Shows Calendar</string>
+    <string name="episodes">Episodes</string>
+    <string name="toast_confirm_sp_add">TV show added to your favorites list</string>
+    <string name="toast_reject_sp_add">TV show could not be added to your favorites list. Try again please</string>
+    <string name="toast_confirm_sp_del">TV show removed from your favorites list</string>
+    <string name="toast_reject_sp_del">TV show could not be deleted from your favorites list. Try again please</string>
+    <string name="search_edit">Search&#8230;</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/MenuLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:minHeight="115dp"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/unmovilboton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/telephone_blue"
+                android:gravity="center"
+                android:onClick="irConsultaUnMovil"
+                android:text="@string/unmovilboton"
+                android:textColor="@color/white"
+                tools:context=".MenuApp" />
+
+            <Button
+                android:id="@+id/dosmovilesboton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/dosmoviles_blue"
+                android:gravity="center"
+                android:onClick="irComparaDosMoviles"
+                android:text="@string/dosmovilesboton"
+                android:textColor="@color/white"
+                tools:context=".MenuApp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearmenu1"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:minHeight="115dp"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/rangopreciosboton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/euro_blue"
+                android:gravity="center"
+                android:onClick="irRangoPrecios"
+                android:text="@string/rangopreciosboton"
+                android:textColor="@color/white"
+                tools:context=".MenuApp" />
+
+            <Button
+                android:id="@+id/soboton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/windows_blue"
+                android:gravity="center"
+                android:onClick="irSO"
+                android:text="@string/soboton"
+                android:textColor="@color/white"
+                tools:context=".MenuApp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearmenu2"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:minHeight="115dp"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/rankingboton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/star_blue"
+                android:gravity="center"
+                android:onClick="irRanking"
+                android:text="@string/rankingboton"
+                android:textColor="@color/white"
+                tools:context=".MenuApp" />
+
+            <Button
+                android:id="@+id/ultmovilesboton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/new_blue"
+                android:gravity="center"
+                android:onClick="irUltimosMoviles"
+                android:text="@string/ultmovilesboton"
+                android:textColor="@color/white"
+                tools:context=".MenuApp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/linearmenu3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            android:minHeight="40dp"
+            android:weightSum="1.0" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

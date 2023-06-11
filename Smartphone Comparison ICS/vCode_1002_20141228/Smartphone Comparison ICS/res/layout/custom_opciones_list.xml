@@ -1,0 +1,8 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android:list"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/grey"
+    android:dividerHeight="1dp"
+    android:textIsSelectable="true" />

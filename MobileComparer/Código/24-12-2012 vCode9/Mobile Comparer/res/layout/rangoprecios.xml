@@ -1,0 +1,104 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            android:minHeight="40dp"
+            android:weightSum="1.0" >
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="72dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearmenu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:padding="1dp"
+            android:spinnerMode="dialog"
+            tools:context=".RangoPrecios" />
+
+        <TextView
+            android:id="@+id/tope_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/spinner3"
+            android:layout_below="@+id/linearmenu"
+            android:padding="1dip"
+            android:text="@string/tope_inf"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".RangoPrecios" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/spinner3"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/white"
+            tools:context=".RangoPrecios" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="72dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_horizontal"
+            android:padding="1dip"
+            android:spinnerMode="dialog"
+            tools:context=".RangoPrecios" />
+
+        <TextView
+            android:id="@+id/tope_sup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/spinner4"
+            android:padding="1dip"
+            android:text="@string/tope_sup"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".RangoPrecios" />
+        
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_below="@+id/spinner4"
+            android:layout_marginBottom="5dip"
+            android:background="@color/white"
+            tools:context=".RangoPrecios" />
+        
+        <ListView
+            android:id="@+id/listrango"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/separator2"
+            android:divider="@color/grey"
+            android:dividerHeight="2dip"
+            android:cacheColorHint="#000000"
+            android:drawSelectorOnTop="false"
+            android:fastScrollEnabled="true"
+            tools:context=".RangoPrecios" />
+        
+    </RelativeLayout>

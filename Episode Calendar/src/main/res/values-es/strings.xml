@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calendario de Episodios</string>
+    <string name="title_competicion_detail">Competición</string>
+    <string name="title_links">Links</string>
+    <string name="title_informacion">Acerca de&#8230;</string>
+    <string name="all">Todas</string>
+    <string name="no_series">No se pudieron descargar las series disponibles. Por favor, inténtalo de nuevo más tarde.</string>
+    <string name="no_fav_series">Todavía no hay series en la lista de favoritas. Añade algunas series y prueba otra vez :-)</string>
+    <string name="no_episodes">No hay episodios por el momento o no se pudieron descargar. Por favor, inténtalo de nuevo más tarde.</string>
+    <string name="no_search">No hay coincidencias para el criterio de búsqueda especificado.</string>
+    <string name="no_connection">No hay conexión con Internet. Por favor, revisa tu configuración de red.</string>
+    <string name="vote">Vota</string>
+    <string name="thanks">Gracias por votar!</string>
+    <string name="logoSerie">Logo Serie</string>
+    <string name="favIcon">Icono Favoritos</string>
+    <string name="expandIcon">Icono Expandir</string>
+    <string name="next">Siguiente</string>
+    <string name="prev">Anterior</string>
+    <string name="download">Descargar</string>
+    <string name="downloading_data">Descargando información&#8230;</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="navigation_drawer_open">Abrir navegador</string>
+    <string name="navigation_drawer_close">Cerrar navegador</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_about">Acerca de&#8230;</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="today_episodes">Episodios de hoy</string>
+    <string name="favorite_shows">Series favoritas</string>
+    <string name="all_shows">Todas las series</string>
+    <string name="calendar">Calendario de series</string>
+    <string name="episodes">Episodios</string>
+    <string name="toast_confirm_sp_add">Serie añadida a la lista de favoritas</string>
+    <string name="toast_reject_sp_add">La serie no pudo añadirse a la lista de favoritas. Prueba otra vez, por favor</string>
+    <string name="toast_confirm_sp_del">Serie eliminada de la lista de favoritas</string>
+    <string name="toast_reject_sp_del">La serie no pudo eliminarse de la lista de favoritas. Prueba otra vez, por favor</string>
+    <string name="search_edit">Buscar&#8230;</string>
+
+</resources>

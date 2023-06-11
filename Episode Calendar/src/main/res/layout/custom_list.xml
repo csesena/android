@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relDetalles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <ListView
+            android:id="@+id/item_detail_list"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:textIsSelectable="true"
+            tools:context=".EpisodioFragment" />
+
+        <LinearLayout
+            android:id="@+id/searchField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:visibility="gone">
+            <AutoCompleteTextView
+                android:id="@+id/searchText"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:completionThreshold="1"
+                android:inputType="textAutoComplete"
+                android:hint="@string/search_edit"/>
+
+         <Button
+                android:id="@+id/searchButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_theme"
+                android:textColor="@color/white"
+                android:text="@string/action_search"
+                android:onClick="searchInList"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/adBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/palette_mintense_blue_grey"
+        android:layout_marginTop="1dp" >
+    </RelativeLayout>
+
+</RelativeLayout>

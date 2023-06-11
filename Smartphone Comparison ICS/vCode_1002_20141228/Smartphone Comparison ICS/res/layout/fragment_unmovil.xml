@@ -1,0 +1,650 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/white_striped_bg" >
+
+    <RelativeLayout
+        android:id="@+id/linearmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:minHeight="50dp" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/global"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearmenu"
+        android:background="@drawable/white_striped_bg"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true" >
+
+            <Button
+                android:id="@+id/buttonStore"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_button"
+                android:onClick="storeMobile"
+                android:text="@string/addfavoritos"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonStore"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dip"
+                android:background="@color/soft_grey"
+                android:completionHint="@string/autocompletar"
+                android:completionThreshold="1"
+                android:dropDownHeight="250dp"
+                android:dropDownWidth="wrap_content"
+                android:gravity="center"
+                android:hint="@string/nombre_puntos"
+                android:inputType="textAutoComplete"
+                android:minHeight="50dp"
+                android:textColor="@color/grey"
+                android:textSize="22sp" />
+
+            <!--
+        <TextView
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_below="@+id/spinner1"
+            android:padding="5dip"
+            android:text="@string/imagen"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            tools:context=".UnMovil" />
+            -->
+
+            <ImageView
+                android:id="@+id/mv1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/mv1"
+                android:padding="5dip"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/leyenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mv1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dip"
+                android:text="@string/tocaparadescargar"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leyenda"
+                android:padding="5dip"
+                android:text="@string/nombre"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/nombre1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombre"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/procesador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombre1"
+                android:padding="5dip"
+                android:text="@string/procesador"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/procesador1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/procesador"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/gpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/procesador1"
+                android:padding="5dip"
+                android:text="@string/gpu"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/gpu1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gpu"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/ram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gpu1"
+                android:padding="5dip"
+                android:text="@string/ram"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/ram1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ram"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/memoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ram1"
+                android:padding="5dip"
+                android:text="@string/memoria"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/memoria1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/memoria"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/memoria1"
+                android:padding="5dip"
+                android:text="@string/cs"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/cs1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cs"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/so"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cs1"
+                android:padding="5dip"
+                android:text="@string/so"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/so1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/so"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/bateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/so1"
+                android:padding="5dip"
+                android:text="@string/bateria"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/bateria1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bateria"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/pantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bateria1"
+                android:padding="5dip"
+                android:text="@string/pantalla"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/pantalla1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pantalla"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/tampantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pantalla1"
+                android:padding="5dip"
+                android:text="@string/tampantalla"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/tampantalla1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tampantalla"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/respantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tampantalla1"
+                android:padding="5dip"
+                android:text="@string/respantalla"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/respantalla1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/respantalla"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/proteccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/respantalla1"
+                android:padding="5dip"
+                android:text="@string/proteccion"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/proteccion1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proteccion"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/camara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proteccion1"
+                android:padding="5dip"
+                android:text="@string/camara"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/camara1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camara"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/conectividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camara1"
+                android:padding="5dip"
+                android:text="@string/conectividad"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/conectividad1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conectividad"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/nfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conectividad1"
+                android:padding="5dip"
+                android:text="@string/nfc"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/nfc1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nfc"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nfc1"
+                android:padding="5dip"
+                android:text="@string/gps"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/gps1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gps"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gps1"
+                android:padding="5dip"
+                android:text="@string/radio"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/radio1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/medidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio1"
+                android:padding="5dip"
+                android:text="@string/medidas"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/medidas1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medidas"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medidas1"
+                android:padding="5dip"
+                android:text="@string/peso"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/peso1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/peso"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/peso1"
+                android:padding="5dip"
+                android:text="@string/precio"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/precio1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precio"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/precio1"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@color/grey"
+                android:padding="5dip"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/puntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator"
+                android:padding="5dip"
+                android:text="@string/puntuacion"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/puntuacion1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/puntuacion"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:context=".UnMovil" />
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/puntuacion1"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@color/grey"
+                android:padding="5dip"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/comentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator2"
+                android:padding="5dip"
+                android:text="@string/comentario"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                tools:context=".UnMovil" />
+
+            <TextView
+                android:id="@+id/comentario1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comentario"
+                android:layout_margin="2dp"
+                android:background="@color/strong_grey"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:context=".UnMovil" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

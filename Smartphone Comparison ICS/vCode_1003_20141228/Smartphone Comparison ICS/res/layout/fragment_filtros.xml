@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_striped_bg" >
+
+    <!-- Ad Bar -->
+
+    <RelativeLayout
+        android:id="@+id/linearmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:minHeight="50dp" >
+    </RelativeLayout>
+
+    <!-- Global ScrollView con Layout -->
+
+    <ScrollView
+        android:id="@+id/global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearmenu"
+        android:layout_marginBottom="50dp" >
+
+        <RelativeLayout
+            android:id="@+id/relglobal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:padding="15dp"
+            android:paddingTop="0dp"
+            android:scrollbars="vertical" >
+
+            <!-- Mensaje filtros -->
+
+            <TextView
+                android:id="@+id/tv_filtro_mensaje"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:paddingTop="0dp"
+                android:text="@string/filtro_mensaje"
+                android:textSize="19sp" />
+
+            <!-- CPU -->
+
+            <TextView
+                android:id="@+id/tv_sp_cpu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_filtro_mensaje"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/filtro_procesador"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCPU"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_cpu"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:spinnerMode="dialog" />
+
+            <!-- GPU -->
+
+            <TextView
+                android:id="@+id/tv_sp_gpu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerCPU"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_gpu"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerGPU"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_gpu"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dip"
+                android:spinnerMode="dialog" />
+
+            <!-- RAM -->
+
+            <TextView
+                android:id="@+id/tv_et_ram"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerGPU"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_ram"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editMinRAM"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_et_ram"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_min"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <EditText
+                android:id="@+id/editMaxRAM"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMinRAM"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_max"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <!-- Memoria Interna -->
+
+            <TextView
+                android:id="@+id/tv_et_memoria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMaxRAM"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_memoria"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editMinMemoria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_et_memoria"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_min"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <EditText
+                android:id="@+id/editMaxMemoria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMinMemoria"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_max"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <!-- Card Slot -->
+
+            <TextView
+                android:id="@+id/tv_sw_cs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMaxMemoria"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_cs"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/switchCS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sw_cs"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dip" >
+
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/si" />
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+
+                <RadioButton
+                    android:id="@+id/radio_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/all" />
+            </RadioGroup>
+
+            <!-- SO -->
+
+            <TextView
+                android:id="@+id/tv_sp_so"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchCS"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_so"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerSO"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_so"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dip"
+                android:spinnerMode="dialog" />
+
+            <!-- Bateria -->
+
+            <TextView
+                android:id="@+id/tv_et_bateria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerSO"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_bateria"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editMinBateria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_et_bateria"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_min"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <EditText
+                android:id="@+id/editMaxBateria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMinBateria"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_max"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <!-- Pantalla -->
+
+            <TextView
+                android:id="@+id/tv_sp_pantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMaxBateria"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_pantalla"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerPantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_pantalla"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dip"
+                android:spinnerMode="dialog" />
+
+            <!-- Tamano Pantalla -->
+
+            <TextView
+                android:id="@+id/tv_et_tampantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerPantalla"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_tampantalla"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editMinTamPantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_et_tampantalla"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_min"
+                android:inputType="numberDecimal"
+                android:padding="5dip" />
+
+            <EditText
+                android:id="@+id/editMaxTamPantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMinTamPantalla"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_max"
+                android:inputType="numberDecimal"
+                android:padding="5dip" />
+
+            <!-- Resolucion Pantalla -->
+
+            <TextView
+                android:id="@+id/tv_sp_respantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMaxTamPantalla"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_respantalla"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerResPantalla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_respantalla"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dip"
+                android:spinnerMode="dialog" />
+
+            <!-- Proteccion Pantalla -->
+
+            <TextView
+                android:id="@+id/tv_sp_proteccion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerResPantalla"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_proteccion"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerProteccion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_proteccion"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dip"
+                android:spinnerMode="dialog" />
+
+            <!-- Camara -->
+
+            <TextView
+                android:id="@+id/tv_sp_camara"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerProteccion"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_camara"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCamara"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sp_camara"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="1dip"
+                android:spinnerMode="dialog" />
+
+            <!-- Conectividad -->
+
+            <TextView
+                android:id="@+id/tv_cb_conectividad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerCamara"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_conectividad"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/checkBoxConectividad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cb_conectividad"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dip" >
+
+                <CheckBox
+                    android:id="@+id/bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filtro_bt" />
+
+                <CheckBox
+                    android:id="@+id/wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filtro_wifi" />
+
+                <CheckBox
+                    android:id="@+id/ir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filtro_ir" />
+            </LinearLayout>
+
+            <!-- NFC -->
+
+            <TextView
+                android:id="@+id/tv_sw_nfc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBoxConectividad"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_nfc"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/switchNFC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sw_nfc"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dip" >
+
+                <RadioButton
+                    android:id="@id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/si" />
+
+                <RadioButton
+                    android:id="@id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+
+                <RadioButton
+                    android:id="@id/radio_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/all" />
+            </RadioGroup>
+
+            <!-- GPS -->
+
+            <TextView
+                android:id="@+id/tv_sw_gps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchNFC"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_gps"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/switchGPS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sw_gps"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dip" >
+
+                <RadioButton
+                    android:id="@id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/si" />
+
+                <RadioButton
+                    android:id="@id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+
+                <RadioButton
+                    android:id="@id/radio_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/all" />
+            </RadioGroup>
+
+            <!-- Radio -->
+
+            <TextView
+                android:id="@+id/tv_sw_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchGPS"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_radio"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/switchRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sw_radio"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dip" >
+
+                <RadioButton
+                    android:id="@id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/si" />
+
+                <RadioButton
+                    android:id="@id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+
+                <RadioButton
+                    android:id="@id/radio_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/all" />
+            </RadioGroup>
+
+            <!-- Precio -->
+
+            <TextView
+                android:id="@+id/tv_et_precio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchRadio"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dark_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/filtro_precio"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editMinPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_et_precio"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_min"
+                android:inputType="number"
+                android:padding="5dip" />
+
+            <EditText
+                android:id="@+id/editMaxPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editMinPrecio"
+                android:layout_margin="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="@string/filtro_max"
+                android:inputType="number"
+                android:padding="5dip" />
+        </RelativeLayout>
+    </ScrollView>
+    <!-- Boton de enviar filtros -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/menu_button"
+        android:onClick="buscar"
+        android:text="@string/buscar"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

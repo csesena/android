@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_striped_bg" >
+
+    <RelativeLayout
+        android:id="@+id/linearmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:minHeight="50dp" >
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearmenu"
+        android:layout_marginTop="2dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/grey"
+        android:dividerHeight="2dip"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        tools:context=".Ranking" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="@string/pulsa"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/cambia" 
+        android:onClick="mostrarFrase"
+        android:drawableTop="@drawable/cambfrase" />
+    <RelativeLayout 
+        android:id="@+id/InnerRelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button">
+    <ImageButton 
+        android:id="@+id/ib"
+        android:background="@drawable/mute"
+        android:contentDescription="@string/mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/button" 
+        android:onClick="mutearSiNo" />
+    <ImageButton 
+        android:id="@+id/share"
+        android:background="@drawable/share"
+        android:contentDescription="@string/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ib"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_below="@+id/button"
+        android:onClick="compartir" />
+    <ImageButton 
+        android:id="@+id/repeat"
+        android:background="@drawable/repeat"
+        android:contentDescription="@string/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/share"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/button"
+        android:onClick="repetir" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/InnerRelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="@string/salir" 
+        android:onClick="salir"
+        android:drawableTop="@drawable/botsalir" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

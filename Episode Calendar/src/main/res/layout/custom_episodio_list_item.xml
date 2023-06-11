@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_theme"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp">
+            <ImageView
+                android:id="@+id/favIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_action_not_important"
+                android:contentDescription="@string/favIcon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/layoutImagen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:id="@+id/imagenSerie"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:minWidth="100dp"
+                        android:minHeight="150dp"
+                        android:maxWidth="150dp"
+                        android:maxHeight="150dp"
+                        android:layout_margin="3dp"
+                        android:contentDescription="@string/logoSerie"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/film_reel"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEpisodioData"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/serie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/episodio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/nsne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/expandIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_action_expand"
+                        android:contentDescription="@string/expandIcon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/resumenEpisodio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

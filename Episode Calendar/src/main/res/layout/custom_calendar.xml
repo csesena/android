@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendarLO"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/calendarInsideLO"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/episode_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:id="@+id/hideLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:context=".CalendarioFragment" />
+
+            <ImageView
+                android:id="@+id/expandIcon"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_collapse"
+                android:background="@drawable/button_theme"
+                android:contentDescription="@string/expandIcon" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <ProgressBar
+         android:id="@+id/progressBar"
+         style="?android:attr/progressBarStyleLarge"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_gravity="center"
+         android:paddingTop="100dp" />
+
+     <RelativeLayout
+         android:id="@+id/adBar"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:background="@color/white"
+         android:layout_marginTop="1dp" >
+     </RelativeLayout>-->
+
+</RelativeLayout>

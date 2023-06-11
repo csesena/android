@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nombreOpcion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="50dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imagenOpcion"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignRight="@id/nombreOpcion"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/imagen_opcion"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

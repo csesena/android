@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".Informacion" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/info"
+            android:background="@color/white"
+            tools:context=".Informacion" />
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:context=".Informacion" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info1"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:context=".Informacion" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info2"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:context=".Informacion" />
+
+        <TextView
+            android:id="@+id/info4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info3"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:context=".Informacion" />
+
+        <TextView
+            android:id="@+id/info5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info4"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:context=".Informacion" />
+
+        <TextView
+            android:id="@+id/info6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info5"
+            android:layout_margin="5dip"
+            android:padding="1dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:context=".Informacion" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            tools:context=".DosMoviles" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:background="@color/white"
+            tools:context=".DosMoviles" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            tools:context=".DosMoviles" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/menu_button"
+            android:onClick="comparar"
+            android:text="@string/comparar"
+            android:textColor="@color/white"
+            tools:context=".DosMoviles" />
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu"
+            android:layout_below="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:minHeight="40dp"
+            android:weightSum="1.0" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,766 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearmenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            android:minHeight="40dp"
+            android:weightSum="1.0" >
+        </LinearLayout>
+
+        <!--
+        <TextView
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="@string/imagen"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+         <ImageView
+            android:id="@+id/mv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen"
+            android:contentDescription="@string/mv1"
+            android:padding="5dip" />
+
+        <ImageView
+            android:id="@+id/mv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv1"
+            android:contentDescription="@string/mv2"
+            android:padding="5dip" />
+        -->
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearmenu"
+            android:padding="5dip"
+            android:text="@string/nombre"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/nombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/nombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/procesador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre2"
+            android:padding="5dip"
+            android:text="@string/procesador"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/procesador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/procesador"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/procesador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/procesador1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/gpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/procesador2"
+            android:padding="5dip"
+            android:text="@string/gpu"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/gpu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpu"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/gpu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpu1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpu2"
+            android:padding="5dip"
+            android:text="@string/ram"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/ram1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ram"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/ram2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ram1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/memoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ram2"
+            android:padding="5dip"
+            android:text="@string/memoria"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/memoria1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/memoria"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/memoria2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/memoria1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/cs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/memoria2"
+            android:padding="5dip"
+            android:text="@string/cs"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/cs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cs"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/cs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cs1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/so"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cs2"
+            android:padding="5dip"
+            android:text="@string/so"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/so1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/so"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/so2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/so1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/bateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/so2"
+            android:padding="5dip"
+            android:text="@string/bateria"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/bateria1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bateria"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/bateria2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bateria1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/pantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bateria2"
+            android:padding="5dip"
+            android:text="@string/pantalla"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/pantalla1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pantalla"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/pantalla2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pantalla1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/tampantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pantalla2"
+            android:padding="5dip"
+            android:text="@string/tampantalla"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/tampantalla1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tampantalla"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/tampantalla2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tampantalla1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/proteccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tampantalla2"
+            android:padding="5dip"
+            android:text="@string/proteccion"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/proteccion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proteccion"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/proteccion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proteccion1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proteccion2"
+            android:padding="5dip"
+            android:text="@string/camara"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/camara1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camara"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/camara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camara1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/conectividad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camara2"
+            android:padding="5dip"
+            android:text="@string/conectividad"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/conectividad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conectividad"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/conectividad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conectividad1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conectividad2"
+            android:padding="5dip"
+            android:text="@string/nfc"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/nfc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nfc"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/nfc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nfc1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nfc2"
+            android:padding="5dip"
+            android:text="@string/gps"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/gps1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/gps2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps2"
+            android:padding="5dip"
+            android:text="@string/radio"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/medidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio2"
+            android:padding="5dip"
+            android:text="@string/medidas"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/medidas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medidas"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/medidas2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medidas1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medidas2"
+            android:padding="5dip"
+            android:text="@string/peso"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/peso1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/peso"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/peso2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/peso1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/peso2"
+            android:padding="5dip"
+            android:text="@string/precio"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/precio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precio"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/precio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precio1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            tools:context=".Comparar" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/precio2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@color/white"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            android:padding="5dip"
+            android:text="@string/puntuacion"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/puntuacion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/puntuacion"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            android:textSize="17sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/puntuacion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/puntuacion1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="17sp"
+            tools:context=".Comparar" />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/puntuacion2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@color/white"
+            android:padding="5dip"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/comentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator2"
+            android:padding="5dip"
+            android:text="@string/comentario"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/comentario1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comentario"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            android:textSize="22sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/comentario2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comentario1"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="22sp"
+            tools:context=".Comparar" />
+
+        <View
+            android:id="@+id/separator3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/comentario2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@color/white"
+            android:padding="5dip"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/resumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator3"
+            android:padding="5dip"
+            android:text="@string/resumen"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".Comparar" />
+
+        <TextView
+            android:id="@+id/resumen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resumen"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/soft_green"
+            android:textSize="17sp"
+            tools:context=".Comparar" />
+    </RelativeLayout>
+
+</ScrollView>

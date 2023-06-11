@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+        
+        <color name="black">#000000</color>
+        <color name="white">#FFFFFF</color>
+        <color name="lightest_grey">#F5F5F5</color>
+        <color name="light_grey">#CCCCCC</color>
+        <color name="grey">#808080</color>
+        <color name="dark_grey">#474747</color>
+        <color name="button_grey">#444444</color>
+        <color name="light_green">#5cff5c</color>
+        <color name="green">#08781b</color>
+        <color name="red">#f01f1f</color>
+        <color name="dark_red">#a60c2a</color>
+        <color name="orange">#ff7800</color>
+        <color name="light_blue">#00abd6</color>
+        <color name="dark_blue">#272d54</color>
+        <color name="blue">#2966c9</color>
+        <color name="transparent">#80000000</color>
+
+
+        <color name="palette_lintense_grey_focused">#AA202020</color>
+        <color name="palette_grey_focused">#AA424242</color>
+        <color name="palette_lintense_grey_pressed">#99202020</color>
+        <color name="palette_grey_pressed">#99424242</color>
+        <color name="palette_lintense_grey">#202020</color>
+        <color name="palette_grey">#424242</color>
+
+        <color name="palette_intense_grey">#111111</color>
+        <color name="palette_intense_grey_transparent">#DD111111</color>
+        <color name="palette_light_grey">#e3e3e3</color>
+
+        <color name="palette_blue_grey_focused">#AA607D8B</color>
+        <color name="palette_blue_grey_sec_focused">#AA546E7A</color>
+        <color name="palette_blue_grey_pressed">#99607D8B</color>
+        <color name="palette_blue_grey_sec_pressed">#99546E7A</color>
+        <color name="palette_blue_grey">#607D8B</color>
+        <color name="palette_blue_grey_sec">#546E7A</color>
+        <color name="palette_lintense_blue_grey">#37474F</color>
+        <color name="palette_intense_blue_grey">#263238</color>
+        <color name="palette_mintense_blue_grey">#263238</color>
+        <color name="palette_light_blue_grey_focused">#AACFD8DC</color>
+        <color name="palette_lightest_blue_grey_focused">#AAECEFF1</color>
+        <color name="palette_light_blue_grey_pressed">#99CFD8DC</color>
+        <color name="palette_lightest_blue_grey_pressed">#99ECEFF1</color>
+        <color name="palette_light_blue_grey">#CFD8DC</color>
+        <color name="palette_lightest_blue_grey">#ECEFF1</color>
+
+    </resources>

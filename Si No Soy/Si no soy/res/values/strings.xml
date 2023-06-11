@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SiNoSoy!</string>
+    <string name="app_name">Si no soy</string>
+    <string name="pulsa">¡Pulsa el botón!</string>
+    <string name="volver">Volver</string>
+    <string name="cambia">Otra frase!</string>
+    <string name="salir">Salir</string>
+    <string name="informacion">Información</string>
+    <string name="info">Información de contacto</string>
+    <string name="frase">Gracias por descargar la Aplicación. Si te ha gustado, agradecería una valoración positiva en Google Play.</string>
+    <string name="frase2">Dejo mis datos de contacto por si quieres enviar frases nuevas o sugerencias.</string>
+    <string name="email">e-mail: c.sesena@gmail.com</string>
+    <string name="website">website: android.sanchezsesena.com</string>
+    <string name="mute">Mute</string>
+    <string name="share">Compartir frase con tus amigos</string>
+    <string name="repeat">Repetir frase</string>
+
+</resources>

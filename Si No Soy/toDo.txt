@@ -1,0 +1,3 @@
+- Revisar compartición por Facebook y otros canales distintos de Whatsapp. Añadir al texto "(by Si no soy... for Android)"
+- Añadir la posibilidad de poner frases como tono.
+- Modo juego

@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:actionBarStyle">@style/Widget.AppCompat.ActionBar</item>
+        <item name="android:calendarViewStyle">@style/Widget.CalendarView.Custom</item>
+    </style>
+
+    <!-- the theme applied to the ActionBar -->
+   <style name="Widget.AppCompat.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:background">@color/palette_mintense_blue_grey</item>
+        <item name="android:windowBackground">@color/palette_mintense_blue_grey</item>
+        <item name="android:backgroundSplit">@android:drawable/divider_horizontal_bright</item>
+    </style>
+
+    <!-- Calendar View -->
+    <style name="Widget.CalendarView.Custom" parent="android:Widget.Holo.Light.CalendarView">
+        <item name="android:showWeekNumber">false</item>
+        <item name="android:weekDayTextAppearance">?android:textAppearanceMedium</item>
+        <item name="android:dateTextAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+</resources>

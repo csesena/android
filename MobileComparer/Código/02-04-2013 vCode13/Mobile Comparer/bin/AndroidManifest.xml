@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="csesena.utilidades.mobilecomparer"
+    android:versionCode="13"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:allowBackup="true">
+        <activity
+            android:name=".MenuApp"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UnMovil"
+            android:label="@string/title_activity_unmovil"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".DosMoviles"
+            android:label="@string/title_activity_dosmoviles"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".Comparar"
+            android:label="@string/title_activity_comparar"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".RangoPrecios"
+            android:label="@string/title_activity_rangoprecios"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".SO"
+            android:label="@string/title_activity_so"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".Ranking"
+            android:label="@string/title_activity_ranking"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".UltimosMoviles"
+            android:label="@string/title_activity_ultmoviles"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name="csesena.utilidades.mobilecomparer.Informacion"
+            android:label="@string/title_activity_informacion"
+            android:configChanges="orientation" >
+        </activity>
+        <activity android:name="com.google.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    </application>
+
+</manifest>
