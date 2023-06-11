@@ -1,0 +1,94 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="csesena.utilidades.mobilecomparer"
+    android:versionCode="25"
+    android:versionName="2.2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8" 
+        android:targetSdkVersion="19" /> <!-- Android 2.2 = 8; Android 4.4 = 19 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MenuApp"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UnMovil"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_unmovil" >
+        </activity>
+        <activity
+            android:name=".DosMoviles"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_dosmoviles" >
+        </activity>
+        <activity
+            android:name=".Comparar"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_comparar" >
+        </activity>
+        <activity
+            android:name=".Filtros"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_filtros" >
+        </activity>
+        <activity
+            android:name=".ResultadosFiltro"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_resultados_filtro" >
+        </activity>
+        <activity
+            android:name=".RangoPrecios"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_rangoprecios" >
+        </activity>
+        <activity
+            android:name=".SO"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_so" >
+        </activity>
+        <activity
+            android:name=".Ranking"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_ranking" >
+        </activity>
+        <activity
+            android:name=".UltimosMoviles"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_ultmoviles" >
+        </activity>
+        <activity
+            android:name=".Favoritos"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_favoritos" >
+        </activity>
+        <activity
+            android:name="csesena.utilidades.mobilecomparer.misc.Informacion"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_informacion" >
+        </activity>
+        <activity
+            android:name="csesena.utilidades.mobilecomparer.misc.Configuracion"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_configuracion" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>
