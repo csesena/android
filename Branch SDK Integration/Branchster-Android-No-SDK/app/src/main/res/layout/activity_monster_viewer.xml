@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/branchsterContainer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cmdChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:text="Change" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:id="@+id/infoButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monster_name"
+                android:gravity="center"
+                android:textSize="@dimen/name_font_size"
+                android:textColor="#474747" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/branchsterContainer"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:paddingRight="34dp"
+        android:paddingLeft="34dp"
+        android:layout_height="@dimen/branchster_container_height">
+
+        <io.branch.branchster.util.MonsterImageView
+            android:id="@+id/monster_img_view"
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/monster_drawable"/>
+
+        <!--<View-->
+            <!--android:layout_alignTop="@+id/botLayerThreeFace"-->
+
+            <!--android:id="@+id/botLayerOneColor"-->
+            <!--android:layout_width="@dimen/branchster_width"-->
+            <!--android:layout_height="@dimen/branchster_height"-->
+            <!--android:layout_alignLeft="@+id/botLayerTwoBody"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/botLayerTwoBody"-->
+            <!--android:layout_width="@dimen/branchster_width"-->
+            <!--android:layout_height="@dimen/branchster_height"-->
+            <!--android:src="@drawable/body0"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/botLayerThreeFace"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/branchster_height"-->
+            <!--android:src="@drawable/face0"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/description_background"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Bingles Jingleheimer Bingles Jingleheimer Bingles Jingleheimer Bingles Jingleheimer Bingles Jingleheimer Bingles Jingleheimer Bingles Jingleheimer Bingles Jingleheimer"
+            android:textColor="#474747"
+            android:textSize="@dimen/description_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@android:drawable/ic_menu_share" />
+
+            <TextView
+                android:id="@+id/shareUrl"
+                android:textIsSelectable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AAFFFFFF">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>
+    

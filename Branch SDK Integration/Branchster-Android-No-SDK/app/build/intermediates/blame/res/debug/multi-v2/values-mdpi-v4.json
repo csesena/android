@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mdpi-v4/values-mdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/res/values-mdpi/dimens.xml",
+                    "from": {
+                        "startLines": "3,4,7,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "89,147,304,364",
+                        "endColumns": "57,55,59,45",
+                        "endOffsets": "142,198,359,405"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,113,169,229",
+                        "endColumns": "57,55,59,45",
+                        "endOffsets": "108,164,224,270"
+                    }
+                }
+            ]
+        }
+    ]
+}

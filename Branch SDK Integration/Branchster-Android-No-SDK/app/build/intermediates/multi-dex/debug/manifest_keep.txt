@@ -1,0 +1,16 @@
+-keep class io.branch.branchster.SplashActivity { <init>(); }
+-keep class io.branch.branchster.MonsterViewerActivity { <init>(); }
+-keep class io.branch.branchster.MonsterCreatorActivity { <init>(); }
+-keep class com.facebook.FacebookActivity { <init>(); }
+-keep class com.facebook.CustomTabMainActivity { <init>(); }
+-keep class com.facebook.internal.FacebookInitProvider { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}
+-keep class com.android.tools.fd.** {
+    *;
+}
+-dontnote com.android.tools.fd.**,android.support.multidex.MultiDexExtractor

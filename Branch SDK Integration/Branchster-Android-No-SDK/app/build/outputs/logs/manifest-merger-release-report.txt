@@ -1,0 +1,230 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:2:1-83:12
+MERGED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:design:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/82b80cdffc6d9b8a4603cc5118335e9e/AndroidManifest.xml:17:1-27:12
+MERGED from [io.branch.sdk.android:library:2.19.5] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/9b7651eab5ecdad9b5f37290f1bc94c9/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8dcec65e14fe156a7e02208f0c6ca04e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/f40041a7f471b22ee39bec034a37fec9/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/cf41e73d374e506e30ae62ccb10524c6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/6a46b81671d4e5631d69e8d4101fed4c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/b2fe9d8fa97c0fbd44340c3162fa8e3d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91d3ffc376d6c1b858439e795a2d53fc/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91b29a1d86956a950294ea676c5eb7b1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8fa3f665568b9c143eeeb45071720aaf/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/5fd229f2617f93eaabc519bc878e6541/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/2e435c23062b51f45afabbfc3fa3dd9a/AndroidManifest.xml:17:1-27:12
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/7a62b62955ab131c58201ccb8916986c/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:2:1-83:12
+	package
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:3:5-35
+	android:versionName
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:5:5-32
+		INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:4:5-29
+		INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/82b80cdffc6d9b8a4603cc5118335e9e/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/82b80cdffc6d9b8a4603cc5118335e9e/AndroidManifest.xml:21:5-23:78
+MERGED from [io.branch.sdk.android:library:2.19.5] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/9b7651eab5ecdad9b5f37290f1bc94c9/AndroidManifest.xml:7:5-9:41
+MERGED from [io.branch.sdk.android:library:2.19.5] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/9b7651eab5ecdad9b5f37290f1bc94c9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:transition:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8dcec65e14fe156a7e02208f0c6ca04e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8dcec65e14fe156a7e02208f0c6ca04e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/f40041a7f471b22ee39bec034a37fec9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/f40041a7f471b22ee39bec034a37fec9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/cf41e73d374e506e30ae62ccb10524c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/cf41e73d374e506e30ae62ccb10524c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/6a46b81671d4e5631d69e8d4101fed4c/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/6a46b81671d4e5631d69e8d4101fed4c/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/b2fe9d8fa97c0fbd44340c3162fa8e3d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/b2fe9d8fa97c0fbd44340c3162fa8e3d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91d3ffc376d6c1b858439e795a2d53fc/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91d3ffc376d6c1b858439e795a2d53fc/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91b29a1d86956a950294ea676c5eb7b1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91b29a1d86956a950294ea676c5eb7b1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8fa3f665568b9c143eeeb45071720aaf/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8fa3f665568b9c143eeeb45071720aaf/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/5fd229f2617f93eaabc519bc878e6541/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/5fd229f2617f93eaabc519bc878e6541/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/2e435c23062b51f45afabbfc3fa3dd9a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/2e435c23062b51f45afabbfc3fa3dd9a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/7a62b62955ab131c58201ccb8916986c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/7a62b62955ab131c58201ccb8916986c/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:9:9-38
+	android:minSdkVersion
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:8:9-35
+uses-permission#android.permission.INTERNET
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:13:22-77
+application
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:15:5-81:19
+MERGED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:design:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/82b80cdffc6d9b8a4603cc5118335e9e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/82b80cdffc6d9b8a4603cc5118335e9e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8dcec65e14fe156a7e02208f0c6ca04e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8dcec65e14fe156a7e02208f0c6ca04e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/f40041a7f471b22ee39bec034a37fec9/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/f40041a7f471b22ee39bec034a37fec9/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/cf41e73d374e506e30ae62ccb10524c6/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/cf41e73d374e506e30ae62ccb10524c6/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/6a46b81671d4e5631d69e8d4101fed4c/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/6a46b81671d4e5631d69e8d4101fed4c/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91d3ffc376d6c1b858439e795a2d53fc/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91d3ffc376d6c1b858439e795a2d53fc/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91b29a1d86956a950294ea676c5eb7b1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/91b29a1d86956a950294ea676c5eb7b1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8fa3f665568b9c143eeeb45071720aaf/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/8fa3f665568b9c143eeeb45071720aaf/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/5fd229f2617f93eaabc519bc878e6541/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/5fd229f2617f93eaabc519bc878e6541/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/2e435c23062b51f45afabbfc3fa3dd9a/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/2e435c23062b51f45afabbfc3fa3dd9a/AndroidManifest.xml:25:5-20
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/7a62b62955ab131c58201ccb8916986c/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/7a62b62955ab131c58201ccb8916986c/AndroidManifest.xml:11:5-20
+	android:label
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:20:9-41
+	android:largeHeap
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:16:9-33
+	android:icon
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:19:9-45
+	android:allowBackup
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:17:9-35
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:18:9-52
+activity#io.branch.branchster.SplashActivity
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:21:9-49:20
+	android:screenOrientation
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:24:13-49
+	android:label
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:23:13-45
+	android:launchMode
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:26:13-44
+	android:theme
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:25:13-53
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:22:13-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:28:13-31:29
+action#android.intent.action.MAIN
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:30:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:open+data:scheme:branchsters
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:34:13-39:26
+data
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:35:17-75
+	android:host
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:35:53-72
+	android:scheme
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:35:23-51
+action#android.intent.action.VIEW
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:36:14-66
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:36:22-63
+category#android.intent.category.DEFAULT
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:37:14-73
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:37:24-70
+category#android.intent.category.BROWSABLE
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:38:14-75
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:38:24-72
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:sanchezsesena.com+data:scheme:http
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:42:13-47:29
+	android:autoVerify
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:42:28-53
+activity#io.branch.branchster.MonsterViewerActivity
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:51:9-56:20
+	android:screenOrientation
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:55:13-49
+	android:launchMode
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:54:13-48
+	android:theme
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:53:13-49
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:52:13-70
+activity#io.branch.branchster.MonsterCreatorActivity
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:58:9-63:20
+	android:screenOrientation
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:62:13-49
+	android:launchMode
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:61:13-48
+	android:theme
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:60:13-49
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:59:13-71
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:65:9-107
+	android:value
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:65:66-105
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:65:20-65
+meta-data#io.branch.sdk.BranchKey
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:68:9-107
+	android:value
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:68:59-104
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:68:20-58
+meta-data#io.branch.sdk.BranchKey.test
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:69:9-106
+	android:value
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:69:64-103
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:69:20-63
+meta-data#io.branch.sdk.TestMode
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:72:9-82
+	android:value
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:72:58-79
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:72:20-57
+receiver#io.branch.referral.InstallListener
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:75:9-79:20
+	android:exported
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:75:69-92
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:75:19-68
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:76:13-78:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:77:17-79
+	android:name
+		ADDED from /Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/src/main/AndroidManifest.xml:77:25-76
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services:6.5.87] /Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/d73b2da151c16baaea916decc3c716ff/AndroidManifest.xml:22:13-58

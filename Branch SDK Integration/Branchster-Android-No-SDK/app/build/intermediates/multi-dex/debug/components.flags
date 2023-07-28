@@ -1,0 +1,52 @@
+-injars /Users/marshall/Dropbox/Branchster-Android-No-SDK/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/marshall/Dropbox/Branchster-Android-No-SDK/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/marshall/Library/Android/sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration /Users/marshall/Dropbox/Branchster-Android-No-SDK/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class io.branch.branchster.SplashActivity {
+    <init>();
+}
+
+-keep class io.branch.branchster.MonsterViewerActivity {
+    <init>();
+}
+
+-keep class io.branch.branchster.MonsterCreatorActivity {
+    <init>();
+}
+
+-keep class com.facebook.FacebookActivity {
+    <init>();
+}
+
+-keep class com.facebook.CustomTabMainActivity {
+    <init>();
+}
+
+-keep class com.facebook.internal.FacebookInitProvider {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

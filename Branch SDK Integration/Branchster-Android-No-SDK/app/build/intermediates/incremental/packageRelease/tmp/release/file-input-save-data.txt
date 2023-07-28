@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Jul 17 15:02:49 CEST 2019
+0.baseType=DIRECTORY
+0.base=/Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/build/intermediates/dex/release/mergeDexRelease/out
+0.path=classes.dex
+0.set=DEX
+count=1

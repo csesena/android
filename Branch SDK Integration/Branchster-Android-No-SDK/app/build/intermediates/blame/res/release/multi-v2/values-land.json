@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/c.sanchezsena/Android Apps/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/82b80cdffc6d9b8a4603cc5118335e9e/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/Users/c.sanchezsena/.gradle/caches/transforms-2/files-2.1/380248c834b1f42d9bf7ae29c0cdc109/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "505"
+                    }
+                }
+            ]
+        }
+    ]
+}
